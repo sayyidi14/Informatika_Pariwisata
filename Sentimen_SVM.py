@@ -20,8 +20,7 @@ with tab2:
     st.header("DATA SET")
     st.markdown(
         "Data Set yang digunakan Merupakan Hasil Crawling Ulasan Google Maps Pantai Pasir Putih Tlangong Dengan Jumlah 489 Ulasan")
-    df = pd.read_excel(
-        "Data_Ulasan_Tlangoh_New.xlsx")
+    df = pd.read_excel("Data_Ulasan_Tlangoh_New.xlsx")
     df.columns = ['Ulasan Mentah', 'Ulasan', 'Sentimen']
     del df["Ulasan Mentah"]
     df = df.dropna()
